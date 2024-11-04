@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+/** @jsxImportSource @emotion/react */
+import { containerStyle, titleStyle, subtitleStyle, BlueButton, RedButton } from './emotionStyles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div css={containerStyle}>
+      <h1 css={titleStyle}>Selamat datang di pelajaran CSS-in-JS</h1>
+      <p css={subtitleStyle}>JayJay</p>
+    <div>
+      <BlueButton>Lanjut Belajar!</BlueButton>
+      <RedButton>Kembali</RedButton>
+    </div>
     </div>
   );
 }
